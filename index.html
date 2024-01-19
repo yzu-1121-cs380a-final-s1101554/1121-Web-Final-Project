@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>s1101554 Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="wheel-container">
+            <div id="wheel-fixed-part">
+                <img id="wheel-arrow" src="./images/triangle.png" alt="arrow image not found">
+                <img id="wheel-core" src="./images/roulette-core.png" alt="wheel-core image not found">
+            </div>
+            <div id="wheel-spinning-part">
+                <img id="wheel-bg" src="./images/wheel-bg.png" alt="wheel-bg image not found">
+            </div>
+        </div>
+        <div id="bet-area">
+            <table id="bet-area-bg"></table>
+            <table id="bet-area-fg"></table>
+        </div>
+        <div id="msg-box">
+            <label>
+                <textarea id="msg-textarea" readonly></textarea>
+            </label>
+        </div>
+        <div id="control-panel">
+            <label style="color: white">You have $</label>
+            <label id="money-label">10000</label>
+            <br>
+            <label></label>
+            <label style="color: white">
+                Bet
+                <input id="bet-money-input-text" type="number" onchange="betMoneyOnChange()" value="0">
+            </label>
+            <br>
+            <button id="reset-chips-btn" onclick="resetChipsOnClick()">Reset Chips</button>
+            <br>
+            <button id="spin-btn" onclick="spinOnClick()">spin</button>
+            <br>
+<!--            <img id="img-meme" src="./images/meme.png" alt="spin-btn image not found">-->
+
+<!--            You can delete the following div when reference this project-->
+            <div style="text-align: right; color: lightgray; font-size: calc(.8*min(2vw, 3.5vh))">
+                沒想到被老師放進參考資料了O_O<br>
+                這個專案還有很多
+                <br>
+                你可以點擊
+                <a href="https://github.com/charles1046?tab=repositories">這個連結</a>
+                找到原始碼<br>
+                如果你會使用 github 可以直接開啟分支
+            </div>
+<!--            You can delete the above div when reference this project-->
+
+        </div>
+    </div>
+</body>
+</html>
