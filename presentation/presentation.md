@@ -45,7 +45,7 @@ http://140.138.155.226/~s1101554/web/final-project/
 
 #### 1. 沒有完成籌碼拖拉式互動
 
-<img src="https://imgur.com/pKx75d3.png" width="80%">
+<img src="./grid.png" width="80%">
 
 #### 2. 缺少右下控制區塊外觀設計
 #### 3. 輪盤的數字不是正規排列
@@ -65,5 +65,5 @@ http://140.138.155.226/~s1101554/web/final-project/
 
 [我的 Github](https://github.com/charles1046?tab=repositories)
 
-<img src="https://imgur.com/F5ifzhi.png" width=80%>
+<img src="./meme.png" width=80%>
 
