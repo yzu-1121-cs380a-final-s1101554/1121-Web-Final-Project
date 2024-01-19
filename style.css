@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+
+html {
+    background-color: white;
+    font-family: Antonio, serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 34% auto;
+    grid-template-rows: 60% auto;
+    width: min(177vh, 100vw);
+    aspect-ratio: 16/9;
+    background-color: darkgreen;
+}
+
+#wheel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-color: transparent;
+}
+
+#wheel-fixed-part {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#wheel-arrow {
+    z-index: 100;
+    position: absolute;
+    top: 12%;
+    height: 12%;
+}
+
+#wheel-core {
+    z-index: 10;
+    position: relative;
+    width: 55%;
+    height: 55%;
+    box-shadow: black 0 0 2em;
+    border-radius: 100%;
+}
+
+#wheel-spinning-part {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#wheel-bg {
+    width: 90%;
+    height: 90%;
+    box-shadow: black 0 0 2em;
+    border-radius: 100%;
+}
+
+.wheel-numbers {
+    z-index: 10;
+    position: absolute;
+    transform: translateY(calc(-0.9*min(26.5vh, 15vw)));
+    font-size: min(2vw, 3.5vh);
+    color: white;
+}
+
+#bet-area {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+#bet-area-bg {
+    position: absolute;
+    z-index: 10;
+    width: 90%;
+    height: 90%;
+    /*table-layout: fixed;*/
+    border-spacing: 0;
+}
+
+.bet-area-bg-cell {
+    color: white;
+    text-align:center;
+    border: min(.2vh, .2vw) solid white;
+}
+
+.bet-area-bg-cell.zero-cell {
+    font-size: calc(2*min(2vw, 3.5vh));
+}
+
+.bet-area-bg-cell.single-number-cell {
+    font-size: calc(2*min(2vw, 3.5vh));
+}
+
+.bet-area-bg-cell.two-to-one-cell {
+    font-size: calc(.7*min(2vw, 3.5vh));
+}
+
+.bet-area-bg-cell.ordinal-12s-cell {
+    font-size: calc(1.5*min(2vw, 3.5vh));
+}
+
+.bet-area-bg-cell.btm-cell {
+    font-size: calc(1.5*min(2vw, 3.5vh));
+}
+
+#bet-area-fg {
+    position: absolute;
+    z-index: 100;
+    width: 90%;
+    height: 90%;
+    border-spacing: 0;
+}
+
+.bet-area-fg-cell {
+    color: yellow;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    /*border: min(.2vh, .2vw) dotted purple;*/
+    font-size: calc(1*min(2vw, 3.5vh));
+    /*box-shadow: inset 0 0 3px 1px yellow;*/
+}
+
+.chip-on-bet-area {
+    margin: 0;
+    padding: 0;
+    /*aspect-ratio: 1/1;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .img-of-chip-on-bet-area {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        aspect-ratio: 1/1;
+        content: url("./images/chip.png");
+        /*display: block;*/
+    }
+}
+
+#control-panel {
+    display: flow;
+    position: relative;
+    font-size: calc(1*min(2vw, 3.5vh));
+    font-family: 'Kalnia', serif;
+}
+
+#msg-textarea {
+    z-index: 100;
+    width: 80%;
+    height: 80%;
+    font-size: min(2vw, 3.5vh);
+    color: white;
+    resize: none;
+    border: .5em solid #C6B8AF;
+    background-color: #3a3a3a;
+    box-shadow: inset 0 0 3px 5px black; /* Remove 'inset' */
+    overflow: hidden;
+    font-family: 'Kalnia', serif;
+}
+
+#img-meme {
+    height: 50%;
+}
+
+#money-label {
+    color: white;
+}
