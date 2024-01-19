@@ -6,7 +6,7 @@
 
 沒想到被老師放進參考了 O_O
 
-這個專案還有很多未完成的部分，詳細請看[這份文件](./presentation.md)
+這個專案還有很多未完成的部分，詳細請看[這份文件](./presentation/presentation.md)
 
 ### 參考
 
